@@ -42,6 +42,7 @@
 // import { without } from './array-practice/task8';
 // import { indexOfAll } from './array-practice/task9';
 import { foo, createCb } from './asynchronous/task1';
+import { failureCb, parseJSON, successCb } from './asynchronous/task2';
 
 // console.log('task1 old', task1Old(10) === 500); // true
 // console.log('task1 new', task1New(10) === 500); // true
@@ -181,5 +182,9 @@ import { foo, createCb } from './asynchronous/task1';
 
 // console.log('=============');
 
-console.log(foo(5, createCb('cb')));
-console.log(foo(20, createCb('cb')));
+// console.log(foo(5, createCb('cb')));
+// console.log(foo(20, createCb('cb')));
+
+// console.log('=============');
+
+console.log(parseJSON('{"x":10}', successCb, failureCb));
