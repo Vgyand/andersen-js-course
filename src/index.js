@@ -27,7 +27,7 @@
 // import { task9Old, task9New } from './es-features/task9';
 // import { task10Old, task10New } from './es-features/task10';
 // import { task11Old, task11New } from './es-features/task11';
-import { task12Old, task12New } from './es-features/task12';
+// import { task12Old, task12New } from './es-features/task12';
 // import { task13Old, task13New } from './es-features/task13';
 // import { task14Old, task14New } from './es-features/task14';
 // import { task15Old, task15New } from './es-features/task15';
@@ -41,6 +41,7 @@ import { task12Old, task12New } from './es-features/task12';
 // import { take } from './array-practice/task7';
 // import { without } from './array-practice/task8';
 // import { indexOfAll } from './array-practice/task9';
+import { foo, createCb } from './asynchronous/task1';
 
 // console.log('task1 old', task1Old(10) === 500); // true
 // console.log('task1 new', task1New(10) === 500); // true
@@ -97,8 +98,8 @@ import { task12Old, task12New } from './es-features/task12';
 
 // console.log('=============');
 
-console.log('task12 old', task12Old({ obj2: { some: true } }, 'obj2', 'some2')); // undefined
-console.log('task12 new', task12New({ obj2: { some: true } }, 'obj2', 'some2')); // undefined
+// console.log('task12 old', task12Old({ obj2: { some: true } }, 'obj2', 'some2')); // undefined
+// console.log('task12 new', task12New({ obj2: { some: true } }, 'obj2', 'some2')); // undefined
 
 // console.log('=============');
 
@@ -177,3 +178,8 @@ console.log('task12 new', task12New({ obj2: { some: true } }, 'obj2', 'some2'));
 // ];
 
 // console.log(membersOnActiveMeetups(meetups)); // 1500
+
+// console.log('=============');
+
+console.log(foo(5, createCb('cb')));
+console.log(foo(20, createCb('cb')));
