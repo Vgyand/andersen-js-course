@@ -48,7 +48,8 @@
 // import { getDataParallel, getDataSequential } from './asynchronous/task5';
 // import { getResolvedPromiseFunc } from './asynchronous/task6';
 // import { foo } from './asynchronous/task7';
-import { AsyncTask8, foo1 } from './asynchronous/task8';
+import { foo1 } from './asynchronous/task8';
+import { foo2 } from './asynchronous/task9';
 
 // console.log('task1 old', task1Old(10) === 500); // true
 // console.log('task1 new', task1New(10) === 500); // true
@@ -216,4 +217,9 @@ import { AsyncTask8, foo1 } from './asynchronous/task8';
 
 // console.log(foo());
 
-console.log(foo1('https://jsonplaceholder.typicode.com/users'));
+// console.log('=============');
+
+// console.log(foo1('https://jsonplaceholder.typicode.com/users'));
+
+// console.log('=============');
+console.log(foo2());
