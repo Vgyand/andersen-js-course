@@ -44,6 +44,7 @@
 // import { foo, createCb } from './asynchronous/task1';
 // import { failureCb, parseJSON, successCb } from './asynchronous/task2';
 import { delay } from './asynchronous/task3';
+import { get } from './asynchronous/task4';
 
 // console.log('task1 old', task1Old(10) === 500); // true
 // console.log('task1 new', task1New(10) === 500); // true
@@ -192,4 +193,8 @@ import { delay } from './asynchronous/task3';
 
 // console.log('=============');
 
-console.log(delay(1000).then(value => console.log('done with ' + value)));
+// console.log(delay(1000).then(value => console.log('done with ' + value)));
+
+// console.log('=============');
+
+console.log(get());
