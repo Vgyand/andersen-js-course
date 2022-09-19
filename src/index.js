@@ -45,6 +45,7 @@
 // import { failureCb, parseJSON, successCb } from './asynchronous/task2';
 import { delay } from './asynchronous/task3';
 import { get } from './asynchronous/task4';
+import { getDataParallel, getDataSequential } from './asynchronous/task5';
 
 // console.log('task1 old', task1Old(10) === 500); // true
 // console.log('task1 new', task1New(10) === 500); // true
@@ -197,4 +198,9 @@ import { get } from './asynchronous/task4';
 
 // console.log('=============');
 
-console.log(get());
+// console.log(get());
+
+// console.log('=============');
+
+console.log(getDataParallel());
+console.log(getDataSequential());
