@@ -50,6 +50,7 @@
 // import { foo } from './asynchronous/task7';
 import { foo1 } from './asynchronous/task8';
 import { foo2 } from './asynchronous/task9';
+import { Musician } from './asynchronous/task10';
 
 // console.log('task1 old', task1Old(10) === 500); // true
 // console.log('task1 new', task1New(10) === 500); // true
@@ -222,4 +223,10 @@ import { foo2 } from './asynchronous/task9';
 // console.log(foo1('https://jsonplaceholder.typicode.com/users'));
 
 // console.log('=============');
-console.log(foo2());
+
+// console.log(foo2());
+
+// console.log('=============');
+
+const musician = new Musician('https://jsonplaceholder.typicode.com/albums');
+console.log(musician.getAlbums());
