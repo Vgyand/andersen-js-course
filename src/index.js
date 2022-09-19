@@ -41,8 +41,9 @@
 // import { take } from './array-practice/task7';
 // import { without } from './array-practice/task8';
 // import { indexOfAll } from './array-practice/task9';
-import { foo, createCb } from './asynchronous/task1';
-import { failureCb, parseJSON, successCb } from './asynchronous/task2';
+// import { foo, createCb } from './asynchronous/task1';
+// import { failureCb, parseJSON, successCb } from './asynchronous/task2';
+import { delay } from './asynchronous/task3';
 
 // console.log('task1 old', task1Old(10) === 500); // true
 // console.log('task1 new', task1New(10) === 500); // true
@@ -187,4 +188,8 @@ import { failureCb, parseJSON, successCb } from './asynchronous/task2';
 
 // console.log('=============');
 
-console.log(parseJSON('{"x":10}', successCb, failureCb));
+// console.log(parseJSON('{"x":10}', successCb, failureCb));
+
+// console.log('=============');
+
+console.log(delay(1000).then(value => console.log('done with ' + value)));
