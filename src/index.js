@@ -16,6 +16,8 @@
  * Для задач на array-practice импортируйте написанные функции сюда и проверяйте их работу тут.
  */
 
+import { getResolvedPromiseFunc } from './asynchronous/task6';
+
 // import { task1Old, task1New } from './es-features/task1';
 // import { task2Old, task2New } from './es-features/task2';
 // import { task3Old, task3New } from './es-features/task3';
@@ -43,9 +45,9 @@
 // import { indexOfAll } from './array-practice/task9';
 // import { foo, createCb } from './asynchronous/task1';
 // import { failureCb, parseJSON, successCb } from './asynchronous/task2';
-import { delay } from './asynchronous/task3';
-import { get } from './asynchronous/task4';
-import { getDataParallel, getDataSequential } from './asynchronous/task5';
+// import { delay } from './asynchronous/task3';
+// import { get } from './asynchronous/task4';
+// import { getDataParallel, getDataSequential } from './asynchronous/task5';
 
 // console.log('task1 old', task1Old(10) === 500); // true
 // console.log('task1 new', task1New(10) === 500); // true
@@ -202,5 +204,9 @@ import { getDataParallel, getDataSequential } from './asynchronous/task5';
 
 // console.log('=============');
 
-console.log(getDataParallel());
-console.log(getDataSequential());
+// console.log(getDataParallel());
+// console.log(getDataSequential());
+
+// console.log('=============');
+
+console.log(getResolvedPromiseFunc(200));
