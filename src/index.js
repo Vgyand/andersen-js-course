@@ -16,8 +16,6 @@
  * Для задач на array-practice импортируйте написанные функции сюда и проверяйте их работу тут.
  */
 
-import { getResolvedPromiseFunc } from './asynchronous/task6';
-
 // import { task1Old, task1New } from './es-features/task1';
 // import { task2Old, task2New } from './es-features/task2';
 // import { task3Old, task3New } from './es-features/task3';
@@ -48,6 +46,9 @@ import { getResolvedPromiseFunc } from './asynchronous/task6';
 // import { delay } from './asynchronous/task3';
 // import { get } from './asynchronous/task4';
 // import { getDataParallel, getDataSequential } from './asynchronous/task5';
+// import { getResolvedPromiseFunc } from './asynchronous/task6';
+// import { foo } from './asynchronous/task7';
+import { AsyncTask8, foo1 } from './asynchronous/task8';
 
 // console.log('task1 old', task1Old(10) === 500); // true
 // console.log('task1 new', task1New(10) === 500); // true
@@ -209,4 +210,10 @@ import { getResolvedPromiseFunc } from './asynchronous/task6';
 
 // console.log('=============');
 
-console.log(getResolvedPromiseFunc(200));
+// console.log(getResolvedPromiseFunc(200));
+
+// console.log('=============');
+
+// console.log(foo());
+
+console.log(foo1('https://jsonplaceholder.typicode.com/users'));
